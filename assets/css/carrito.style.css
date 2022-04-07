@@ -1,0 +1,174 @@
+div.content-carrito {
+    display: block;
+    width: 98%;
+    height: max-content;
+    margin: auto;
+    margin-top: 40px;
+
+    background:linear-gradient(black, rgba(0, 119, 255, 0.596));
+    border-radius: 10px;
+    color: rgb(255, 210, 10);
+
+
+
+}
+
+div.usuario {
+    display: block;
+    width: 80%;
+    height: 60px;
+    margin: auto;
+    padding-top: 5px;
+
+
+    color: white;
+
+}
+
+.usuario .position-left {
+    float: right;
+
+}
+
+.usuario .position-left p span {
+    color: rgba(0, 196, 245, 0.829);
+}
+
+/* Diseño para los productos del carrito y la parte final del precio total */
+
+div.lista {
+    background-color: rgba(4, 90, 202, 0.37);
+    display: block;
+    width: 95%;
+    height: max-content;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+
+
+}
+
+.producto-carrito div:first-child {
+    display: block;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    padding: 0px;
+    padding-top: 5px;
+
+}
+
+.producto-carrito div {
+    display: block;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    padding: 10px;
+
+
+}
+
+.producto-carrito div p span {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 4px white;
+
+}
+
+.producto-carrito hr {
+    width: 95%;
+    margin: auto;
+
+}
+
+/* Eliminar */
+.lista div.eliminar a {
+    display: block;
+    width: 100%;
+    height: 45px;
+    float: left;
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align: center;
+
+    text-decoration: none;
+    color: red;
+    -webkit-tap-highlight-color: rgba(240, 248, 255, 0);
+
+}
+
+/* Total Carrito */
+.total-carrito {
+    display: block;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    padding: 10px;
+    color: white;
+
+
+}
+
+.total-carrito .subtotal {
+    color: rgb(0, 255, 64);
+    margin-bottom: 10px;
+
+}
+
+.total-carrito hr {
+    margin-bottom: 10px;
+
+}
+
+/* Forma de Envio */
+div.envio{
+    display: block;
+    width: 100%;
+    height: max-content
+
+
+}
+
+.envio div.padding{
+    padding: 15px;
+
+}
+
+.envio form{
+    background-color: rgba(0, 0, 0, 0.582);
+    color: rgb(206, 209, 0);
+
+}
+
+.envio form label{
+    display: block;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    padding-bottom: 15px;
+
+}
+
+.envio form input[type="submit"]{
+    display: block;
+    width: max-content;
+    height: 50px;
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor: pointer;
+
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border: 1px solid white;
+    background-color: rgb(0, 83, 161);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+
+    transition: all 0.4s ease;
+}
+
+.envio form input[type="submit"]:hover{
+    color: white;
+    box-shadow: inset 100px 8px 100px rgb(0, 175, 79);
+}

@@ -1,0 +1,295 @@
+/* Formularios*/
+
+form {
+    display: block;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    padding: 10px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+
+}
+
+form div {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+
+}
+
+form div:first-child {
+    margin-top: 20px;
+}
+
+form div input {
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.418);
+    color: white;
+    border: none;
+    padding-left: 8px;
+    outline: none;
+
+}
+
+form div input:focus::placeholder {
+    color: rgb(255, 255, 255);
+
+
+}
+
+
+form div input:focus {
+    background-color: rgba(122, 122, 122, 0.233);
+    box-shadow: inset 0px 2px 15px black;
+    color: rgba(255, 255, 255, 0.897);
+
+}
+
+form div button {
+    display: block;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(122, 122, 122, 0.233);
+    box-shadow: inset 0px 0px 45px 1px rgba(0, 74, 109, 0.63);
+    color: white;
+    border-radius: 5px;
+
+
+}
+
+form div button:hover {
+    padding-top: 5px;
+    box-shadow: inset 0px 5px 15px black;
+
+}
+
+
+/* Filtro */
+div.filter-form {
+    display: block;
+    width: 100%;
+}
+
+div.filter-form form label {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+
+}
+
+div.filter-form form input {
+    display: block;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    margin-right: 10px;
+    text-align: center;
+
+
+    cursor: pointer;
+
+}
+
+div.filter-form form input::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    box-shadow: 0px 1px 1px #ffffff;
+    background: #000000;
+    border-radius: 1px;
+    border: 1px solid #00a2d3a8;
+}
+
+/* Pantalla del apartado del cliente*/
+
+.c {
+    background: linear-gradient(black, rgba(6, 86, 151, 0.288));
+    color: white;
+    display: block;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 10px 15px 10px black;
+
+    border-bottom-left-radius: 20px;
+
+}
+
+div.clientes-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        'login'
+        'sign';
+
+
+    width: 100%;
+    height: max-content;
+    margin: auto;
+
+
+}
+
+
+div.login {
+    grid-area: login;
+
+    display: block;
+    width: 70%;
+    height: max-content;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 20px;
+
+    padding-bottom: 60px;
+    border-bottom: 1px solid white;
+
+}
+
+div.sign {
+    grid-area: sign;
+
+    display: block;
+    width: 70%;
+    height: max-content;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 100px;
+
+
+}
+
+div.reset {
+    display: block;
+    width: 70%;
+    height: max-content;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 35px;
+
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+
+
+}
+
+div.reset p a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+
+}
+
+div.reset p a:hover {
+    color: rgb(5, 175, 187);
+
+}
+
+
+
+@media (min-width:860px) {
+
+    div.clientes-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        'login sign';
+
+
+        width: 100%;
+        height: max-content;
+        margin: auto;
+
+
+    }
+
+
+    div.login {
+        grid-area: login;
+
+        display: block;
+        width: 40%;
+        height: max-content;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 20px;
+
+        padding-bottom: 60px;
+        border-bottom: 1px solid white;
+
+    }
+
+    div.sign {
+        grid-area: sign;
+
+        display: block;
+        width: 50%;
+        height: max-content;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 100px;
+
+
+    }
+
+    div.reset {
+        display: block;
+        width: 70%;
+        height: max-content;
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 35px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 10px;
+
+
+    }
+
+    div.reset p a {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+
+    }
+
+    div.reset p a:hover {
+        color: rgb(5, 175, 187);
+
+    }
+
+    /* Esto es para el panel que oculta los formularios*/
+    div#panel{
+        display: block;
+        width: 50%;
+        height: 130vh;
+        
+        background-color: rgba(0, 0, 0, 0.644);
+        position: absolute;
+        top: 230px;
+        left: 50%;
+
+    }
+
+
+
+}

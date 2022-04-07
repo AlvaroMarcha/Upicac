@@ -1,0 +1,182 @@
+/* Footeeeerr */
+footer {
+    display: block;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+    z-index: -99999;
+
+}
+
+footer .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content max-content;
+    grid-template-areas:
+        'data'
+        'contact'
+        'politics'
+    ;
+
+
+    width: 100%;
+    height: max-content;
+    margin: auto;
+
+    /* background-color: blue; */
+
+}
+
+.footer-content div.data, div.contact, div.politics {
+    display: block;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+
+    padding: 10px;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 1px;
+    border-bottom: 0px solid rgba(0, 75, 146, 0.521);
+
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footer-content div.data:hover, div.contact:hover, div.politics:hover {
+    border-bottom: 10px solid rgba(0, 75, 146, 0.521);
+
+}
+
+/* Data */
+
+.footer-content div.data {
+    grid-area: data;
+
+    background-color: black;
+    padding-top: 50px;
+    /* border-top:4px solid rgba(255, 255, 255, 0.377); */
+}
+
+.footer-content div.data span {
+    color: rgba(184, 184, 184, 0.856);
+}
+
+.footer-content div.data a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content div.data a:hover {
+    text-shadow: 0px 0px 10px white;
+}
+
+
+/* Contact */
+.footer-content div.contact {
+    grid-area: contact;
+}
+
+.footer-content div.contact a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.footer-content div.contact a:hover {
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+
+/* Politics */
+.footer-content div.politics {
+    grid-area: politics;
+
+    margin-bottom: 30px;
+}
+
+.footer-content div.politics div {
+    text-decoration: none;
+    color: rgba(165, 165, 165, 0.856);
+
+}
+
+.footer-content div.politics div a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.781);
+
+}
+
+.footer-content div.politics div a:hover {
+    color: rgb(0, 156, 184);
+    text-shadow: 0px 0px 10px rgb(0, 156, 184);
+
+}
+
+.footer-content div.politics div a.private:hover {
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 0px 10px rgb(1, 112, 202);
+
+}
+
+.last-footer {
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+
+    background-color: rgba(0, 75, 146, 0.521);
+
+}
+
+.last-footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.private:hover{
+    text-shadow: 0px 0px 10px rgb(20, 226, 1);
+}
+
+/* GRID ESCRITORIO */
+@media (min-width:860px) {
+
+    footer .footer-content {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 120px 120px;
+        grid-template-areas:
+            'data contact'
+            'data politics'
+        ;
+
+
+        width: 85%;
+        height: max-content;
+        margin: auto;
+        padding-bottom: 40px;
+
+        /* background-color: blue; */
+
+    }
+
+    /* Contact */
+    .footer-content div.contact {
+        grid-area: contact;
+
+        margin-left: 30px;
+
+    }
+
+    /* Politics */
+    .footer-content div.politics {
+        grid-area: politics;
+
+        margin-left: 30px;
+    }
+
+
+}

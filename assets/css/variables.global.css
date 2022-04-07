@@ -1,0 +1,33 @@
+/* Aqui todas las variables que se utilizaran */
+
+/* 
+
+Paleta de colores
+Azul oscuro: rgba(5,31,52,255)
+Azul medio: rgba(2,116,149,255)
+Azul claro: rgba(1,169,193,255)
+Gris azulado: rgba(186,214,219,255)
+Blanco grisaceo: rgba(186,214,219,255)
+
+*/
+
+:root{
+    /* Colores globales */
+    --a-oscuro: rgba(5,31,52);
+    --a-medio: rgba(2,116,149);
+    --a-claro: rgba(1,169,193);
+    --g-azulado: rgba(186,214,219);
+    --b-grisaceo: rgba(186,214,219);
+
+    /* Transparecias de colores globales - Ultima columna tiene un valor menor a 255*/ 
+    --ta-oscuro: rgba(5, 31, 52, 0.637);
+    --ta-medio: rgba(2, 117, 149, 0.603);
+    --ta-claro: rgba(1, 167, 193, 0.658);
+    --tg-azulado: rgba(186, 214, 219, 0.637);
+    --tb-grisaceo: rgba(186, 214, 219, 0.692);
+
+    
+    /* Header variables */
+    /* Aside variables */
+    /* Footer variables */
+}
