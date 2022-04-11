@@ -98,15 +98,23 @@
 
 <body>
     <div class="container">
-        <header>
-        <nav class="nav">
+    <header>
+            <nav id="mobile">
                 <button id="btnMenu" value="false" onclick="openMenu()"><img src="assets/icons/menu.png" alt=""></button>
                 <div id="nav-links">
                     <a href="index.php" class="btn">Inicio</a>
                     <a href="" class="btn">Empresa</a>
-                    <a href="" class="btn">Servicios</a>
+                    <a href="productos.php" class="btn">Servicios</a>
                     <a href="clientes.php" class="btn">Clientes</a>
                     <a href="#" onclick="closeMenu()" class="btn last"><img src="assets/icons/arroy-up.png" alt=""></a>
+                </div>
+            </nav>
+            <nav id="desktop">
+                <div id="nav-links-desktop">
+                    <a href="indexp.php" class="btn">Inicio</a>
+                    <a href="" class="btn">Empresa</a>
+                    <a href="productos.php" class="btn">Servicios</a>
+                    <a href="clientes.php" class="btn">Clientes</a>
                 </div>
             </nav>
             <div class="logo">

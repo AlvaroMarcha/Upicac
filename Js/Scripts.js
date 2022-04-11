@@ -11,10 +11,10 @@ function openMenu(){
     menu.style.top="120px";
     btnMenu.style.top="-100%";
 
-    if(screen.width>860){
-        menu.style.top="0px";
+    var ancho=screen.width;
+    console.log(ancho);
 
-    }
+    
 
 }
 
